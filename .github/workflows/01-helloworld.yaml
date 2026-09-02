@@ -1,0 +1,8 @@
+name: Hello World #workflow
+on: [push] #event
+jobs: #it can contain mutiple jobs  
+  hello: #job name
+    runs-on: ubuntu-latest # where to run
+    steps:
+      - name: Say hello
+        run: echo "Hello, World!"
